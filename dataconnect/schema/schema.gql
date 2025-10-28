@@ -1,0 +1,14 @@
+enum Role {
+  ADMIN
+  ADJUSTER
+  MANAGER
+  DEVELOPER
+}
+
+type Member  @table {
+    email: String! @col(dataType: "varchar(255)")
+    firstName: String!
+    lastName: String!
+    phone: String
+    roles: [Role!]
+}

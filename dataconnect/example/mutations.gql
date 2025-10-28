@@ -1,0 +1,20 @@
+mutation UpdateProfile(
+  # Basic profile information
+  $email: String!
+  $firstName: String!
+  $lastName: String!
+  $phone: String
+  $roles: [Role!]
+) @auth(level: USER) {
+  # Step 2: Update member with provided fields
+  member_upsert(
+    data: {
+      id_expr: "auth.uid"
+      email: $email
+      firstName: $firstName
+      lastName: $lastName
+      phone: $phone
+      roles: $roles
+    }
+  )
+}

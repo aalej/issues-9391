@@ -1,0 +1,5 @@
+query ListEverything @auth(level: PUBLIC) {
+  members {
+    email
+  }
+}
