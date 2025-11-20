@@ -14,4 +14,4 @@ flutter: v3.35.4
 2. Run `firebase dataconnect:sdk:generate`
    - This will generate `./my_test_app/lib/dataconnect_generated/update_profile.dart`, which has the error
 
-<image  src="./images/sdk-error.png"/>
+<image  src="./images/sdk-error-1.png"/>
