@@ -126,4 +126,3 @@ class DefaultConnector {
 
   FirebaseDataConnect dataConnect;
 }
-

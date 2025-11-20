@@ -2,7 +2,7 @@
 
 ## Versions
 
-firebase-tools: v14.22.0<br>
+firebase-tools: v14.25.1<br>
 flutter: v3.35.4
 
 ## Steps to reproduce

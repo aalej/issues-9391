@@ -121,7 +121,7 @@ class UpdateProfileVariables {
   
     roles = Optional.optional(listDeserializer((data) => Role.values.byName(data)), listSerializer(enumSerializer));
     roles.value = json['roles'] == null ? null : (json['roles'] as List<dynamic>)
-        .map((e) => Role.fromJson(e))
+        .map((e) => roleDeserializer(e))
         .toList();
   
   }
