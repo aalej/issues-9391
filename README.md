@@ -25,3 +25,5 @@ roles.value = json['roles'] == null ? null : (json['roles'] as List<dynamic>)
         .map((e) => Role.values.byName(e))
         .toList();
 ```
+
+<image  src="./images/sdk-success.png"/>
